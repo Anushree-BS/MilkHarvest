@@ -1,0 +1,71 @@
+<!doctype html>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Milk Harvest</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart (<span id="header-cart-count">0</span>)</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h1>Checkout</h1>
+<form id="checkout-form" class="checkout-form">
+<fieldset>
+<legend>Delivery details</legend>
+<label>Full name
+<input required id="full-name" name="fullName" />
+</label>
+<label>Phone
+<input required id="phone" name="phone" />
+</label>
+<label>Address
+<textarea required id="address" name="address"></textarea>
+</label>
+<label>Delivery area
+<select id="delivery-area">
+<option value="local">Local — ₹30</option>
+<option value="metro">Metro — ₹50</option>
+<option value="other">Other — ₹80</option>
+</select>
+</label>
+</fieldset>
+
+
+<fieldset>
+<legend>Payment method</legend>
+<label><input type="radio" name="payment" value="cod" checked /> Cash on Delivery</label>
+<label><input type="radio" name="payment" value="card" /> Credit/Debit Card</label>
+<label><input type="radio" name="payment" value="upi" /> UPI</label>
+
+
+<div id="card-fields" class="hidden">
+<label>Card number <input id="card-number" maxlength="19" placeholder="1234 5678 9012 3456" /></label>
+<label>Expiry <input id="card-expiry" placeholder="MM/YY" maxlength="5" /></label>
+<label>CVV <input id="card-cvv" maxlength="4" /></label>
+</div>
+</fieldset>
+
+
+<div class="checkout-actions">
+<a class="btn-outline" href="cart.html">Back to cart</a>
+<button class="btn" type="submit">Pay & Place order</button>
+</div>
+</form>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year"></span> Milk Harvest</p>
+</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
