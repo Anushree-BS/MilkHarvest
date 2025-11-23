@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Milk Harvest — Cart</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Milk Harvest</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart (<span id="header-cart-count">0</span>)</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container cart-page">
+<h1>Your Cart</h1>
+<div id="cart-items"></div>
+
+
+<div class="cart-summary">
+<button class="btn-outline" id="clear-cart">Clear cart</button>
+<div class="summary-box">
+<p>Subtotal: <span id="subtotal">₹0.00</span></p>
+<p>Tax (5%): <span id="tax">₹0.00</span></p>
+<p><strong>Total: <span id="total">₹0.00</span></strong></p>
+<a id="checkout-btn" class="btn" href="payment.html">Proceed to Checkout</a>
+</div>
+</div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year"></span> Milk Harvest</p>
+</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
